@@ -88,20 +88,11 @@
       <artifactId>opentracing-jms-2</artifactId>
       <version>0.0.1</version>
     </dependency>
+
     <dependency>
-      <groupId>org.hawkular.apm</groupId>
-      <artifactId>hawkular-apm-client-opentracing</artifactId>
-      <version>0.14.4.Final</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hawkular.apm</groupId>
-      <artifactId>hawkular-apm-examples-vertx-opentracing-common</artifactId>
-      <version>0.14.4.Final</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hawkular.apm</groupId>
-      <artifactId>hawkular-apm-trace-publisher-rest-client</artifactId>
-      <version>0.14.4.Final</version>
+      <groupId>com.uber.jaeger</groupId>
+      <artifactId>jaeger-core</artifactId>
+      <version>0.18.0</version>
     </dependency>
   </dependencies>
 </project>

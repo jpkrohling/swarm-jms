@@ -50,8 +50,8 @@ public class HelloWorldEndpoint {
 
 			TextMessage textMessage = session.createTextMessage(message);
 
-			SpanContext requestContext = (SpanContext) request.getAttribute(TracingFilter.SERVER_SPAN_CONTEXT);
-			GlobalTracer.get().inject(requestContext, TEXT_MAP, new JmsTextMapInjectAdapter(textMessage));
+			/*Boilerplate*/SpanContext requestContext = (SpanContext) request.getAttribute(TracingFilter.SERVER_SPAN_CONTEXT);
+			/*Boilerplate*/GlobalTracer.get().inject(requestContext, TEXT_MAP, new JmsTextMapInjectAdapter(textMessage));
 			publisher.send(textMessage);
 
 			logger.info("JMS message submitted");
